@@ -1,0 +1,13 @@
+nav {
+    background-color: red;
+}
+
+nav img {
+    width: 40px;
+}
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

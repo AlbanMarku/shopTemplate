@@ -1,12 +1,10 @@
-import Button from 'react-bootstrap/Button';
+import Home from './views/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Button as="a" variant="primary">
-        Button as link
-      </Button>
+      <Home />
     </div>
   );
 }
