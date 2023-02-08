@@ -1,12 +1,36 @@
+import Container from 'react-bootstrap/esm/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Navcomp from '../components/Navcomp';
 import Carouselcomp from '../components/Carouselcomp';
+import '../styles/home.css';
 
 function Home() {
   return (
     <div className="Home">
-      <Navcomp />
-      <Carouselcomp />
-      <p>I am home</p>
+      <Container fluid className="gx-0">
+        <Row className="gx-0">
+          <Col>
+            <Navcomp />
+          </Col>
+        </Row>
+      </Container>
+
+      <Container fluid="lg" className="gx-0 content">
+        <Row className="gx-0">
+          <Col>
+            <Carouselcomp />
+          </Col>
+        </Row>
+        <Row className="gx-0">
+          <Col xs={12} md={6}>
+            test
+          </Col>
+          <Col xs={12} md={6}>
+            test
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

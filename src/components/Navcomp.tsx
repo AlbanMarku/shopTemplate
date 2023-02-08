@@ -9,30 +9,47 @@ import logo from '../assets/logo.svg';
 function Navcomp() {
   return (
     <nav>
-      <Navbar expand="md">
+      <Navbar expand="lg">
         <Container>
-          <Navbar.Brand className="logoArea">
-            <img alt="logo" src={logo} className="d-inline-block align-top" />
-            <header>React Bootstrap</header>
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Navbar.Collapse className="links">
+          <Link id="header" to="/">
+            <Navbar.Brand className="logoArea">
+              <img alt="logo" src={logo} className="d-inline-block align-top" />
+              <div className="headerText">
+                <header>React Bootstrap</header>
+              </div>
+            </Navbar.Brand>
+          </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto links">
               <Link to="/">
                 <Nav.Item>Home</Nav.Item>
               </Link>
               <Link to="/store">
                 <Nav.Item>Store</Nav.Item>
               </Link>
-            </Navbar.Collapse>
+            </Nav>
+          </Navbar.Collapse>
+          {/* jitter from two .collapse */}
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#">Alban Marku</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      {/* <Navbar expand="md">
+        <Container>
+          <Nav className="me-auto">
           </Nav>
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               Signed in as: <a href="#">Alban Marku</a>
             </Navbar.Text>
           </Navbar.Collapse>
-          <Navbar.Toggle />
         </Container>
-      </Navbar>
+      </Navbar> */}
     </nav>
   );
 }

@@ -6,18 +6,24 @@ nav img {
     width: 40px;
 }
 
+#header {
+    text-decoration: none;
+}
+
+.headerText {
+    /* why not aligned */
+    padding-bottom: 3px; 
+}
+
 .logoArea {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.links {
-    display: flex;
-    gap: 10px;
-}
-
 .links > * {
     color: white;
     text-decoration: none;
+    margin-right: 10px;
+
 }
