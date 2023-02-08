@@ -1,0 +1,20 @@
+.Featured {
+    background-color: blue;
+}
+
+.itemArea {
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
