@@ -2,6 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import '../styles/navcomp.css';
 import logo from '../assets/logo.svg';
 
@@ -10,15 +11,18 @@ function Navcomp() {
     <nav>
       <Navbar expand="md">
         <Container>
-          <Navbar.Brand href="#" className="logoArea">
+          <Navbar.Brand className="logoArea">
             <img alt="logo" src={logo} className="d-inline-block align-top" />
             <header>React Bootstrap</header>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Navbar.Collapse>
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">Store</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
+            <Navbar.Collapse className="links">
+              <Link to="/">
+                <Nav.Item>Home</Nav.Item>
+              </Link>
+              <Link to="/store">
+                <Nav.Item>Store</Nav.Item>
+              </Link>
             </Navbar.Collapse>
           </Nav>
           <Navbar.Collapse className="justify-content-end">

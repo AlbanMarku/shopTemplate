@@ -11,3 +11,13 @@ nav img {
     align-items: center;
     gap: 5px;
 }
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links > * {
+    color: white;
+    text-decoration: none;
+}
