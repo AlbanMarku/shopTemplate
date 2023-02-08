@@ -1,0 +1,27 @@
+.ItemCard {
+    width: 300px;
+    border: solid red;
+    padding: 10px;
+}
+
+.ItemCard img {
+    width: 100%;
+}
+
+.itemDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.productName p {
+    margin: 0;
+}

@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Navcomp from '../components/Navcomp';
 import Carouselcomp from '../components/Carouselcomp';
+import Featured from '../components/Featured';
 import '../styles/home.css';
 
 function Home() {
@@ -23,11 +24,8 @@ function Home() {
           </Col>
         </Row>
         <Row className="gx-0">
-          <Col xs={12} md={6}>
-            test
-          </Col>
-          <Col xs={12} md={6}>
-            test
+          <Col xs={12}>
+            <Featured />
           </Col>
         </Row>
       </Container>
