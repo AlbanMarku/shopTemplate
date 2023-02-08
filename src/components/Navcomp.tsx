@@ -2,6 +2,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import '../styles/navcomp.css';
 import logo from '../assets/logo.svg';
@@ -32,24 +34,18 @@ function Navcomp() {
           </Navbar.Collapse>
           {/* jitter from two .collapse */}
           <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#">Alban Marku</a>
-            </Navbar.Text>
+            <div className="inputArea">
+              <Navbar.Text>
+                Signed in as: <a href="#">Alban Marku</a>
+              </Navbar.Text>
+              <Form className="d-flex">
+                <Form.Control type="search" placeholder="Search" className="me-2" aria-label="Search" />
+                <Button variant="outline-success">Search</Button>
+              </Form>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* <Navbar expand="md">
-        <Container>
-          <Nav className="me-auto">
-          </Nav>
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#">Alban Marku</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
     </nav>
   );
 }

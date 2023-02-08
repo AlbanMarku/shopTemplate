@@ -25,5 +25,9 @@ nav img {
     color: white;
     text-decoration: none;
     margin-right: 10px;
+}
 
+.inputArea {
+    display: flex;
+    gap: 10px;
 }
