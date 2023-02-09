@@ -27,5 +27,6 @@ h2 {
         flex-wrap: nowrap;
         overflow: auto;
         gap: 10px;
+        /* Shoddy for narrow desktop user. Make scrollable clean. */
     }
   }

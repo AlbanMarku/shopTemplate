@@ -1,5 +1,16 @@
 .Banner {
-    background-color: red;
     background-size: cover;
     height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blurb {
+    max-width: 300px;
+}
+
+.blurb p {
+    font-size: 1.5rem;
+    color: white;
 }

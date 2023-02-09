@@ -1,4 +1,5 @@
 import banner from '../assets/banner.jpg';
+import Carouselcomp from './Carouselcomp';
 import '../styles/banner.css';
 
 function Banner() {
@@ -9,7 +10,10 @@ function Banner() {
         backgroundImage: `url(${banner})`,
       }}
     >
-      <p>content</p>
+      <div className="blurb">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At maxime magnam eius libero. Repellat, magni.</p>
+      </div>
+      <div className="showcase">{/* <Carouselcomp /> */}</div>
     </div>
   );
 }

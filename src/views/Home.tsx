@@ -6,8 +6,11 @@ import Carouselcomp from '../components/Carouselcomp';
 import Featured from '../components/Featured';
 import Banner from '../components/Banner';
 import '../styles/home.css';
+import slideData from '../data/slides.json';
 
 function Home() {
+  const mainData = slideData.main;
+
   return (
     <div className="Home">
       <Container fluid className="gx-0">
@@ -21,7 +24,7 @@ function Home() {
       <Container fluid="lg" className="gx-0">
         <Row className="gx-0">
           <Col>
-            <Carouselcomp />
+            <Carouselcomp slides={mainData} />
           </Col>
         </Row>
         <Row className="gx-0">

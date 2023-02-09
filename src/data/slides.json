@@ -1,0 +1,10 @@
+{ 
+    "main": [ 
+        { "image" : "https://images2.alphacoders.com/870/870886.jpg", "mainText" : "image 1", "subText" : "555-555-5555" },
+        { "image" : "https://images7.alphacoders.com/874/874020.jpg", "mainText" : "image 2", "subText" : "555-555-5555" } 
+    ],
+    "banner": [ 
+        { "image" : "../assets/slide1.jpg", "mainText" : "MyCity ST", "subText" : "555-555-5555" } , 
+        { "image" : "../assets/slide2.png", "mainText" : "MyCity ST", "subText" : "555-555-5555" } 
+    ]
+}

@@ -1,35 +1,35 @@
 import Carousel from 'react-bootstrap/Carousel';
-import slide from '../assets/slide1.jpg';
-import slide2 from '../assets/slide2.png';
+import CarouselItem from './CarouselItem';
 import '../styles/carouselcomp.css';
 
-function Carouselcomp() {
+type Props = {
+  slides: Slide[];
+};
+
+type Slide = {
+  image: string;
+  mainText: string;
+  subText: string;
+};
+
+function Carouselcomp({ slides }: Props) {
   return (
     <div className="Carouselcomp">
       <Carousel id="test">
-        <Carousel.Item
-          className="imageItem"
-          style={{
-            backgroundImage: `url(${slide})`,
-          }}
-        >
-          <Carousel.Caption>
-            <h3>First</h3>
-            <p>test</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item
-          className="imageItem"
-          style={{
-            backgroundImage: `url(${slide2})`,
-          }}
-        >
-          <Carousel.Caption>
-            <h3>Second</h3>
-            <p>test</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {slides.map((item) => (
+          <Carousel.Item
+            key={item.mainText}
+            className="imageItem"
+            style={{
+              backgroundImage: `url(${item.image})`,
+            }}
+          >
+            <Carousel.Caption>
+              <h3>{item.mainText}</h3>
+              <p>{item.subText}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   );
