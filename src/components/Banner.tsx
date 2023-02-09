@@ -1,3 +1,6 @@
+import Container from 'react-bootstrap/esm/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import SmallCarousel from './SmallCarousel';
 import banner from '../assets/banner.jpg';
 import slideData from '../data/slides.json';
@@ -14,9 +17,12 @@ function Banner() {
       }}
     >
       <div className="blurb">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At maxime magnam eius libero. Repellat, magni.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus, consequatur dicta officiis ipsa
+          consequuntur?
+        </p>
       </div>
-      <div className="showcase">
+      <div className="slide">
         <SmallCarousel />
       </div>
     </div>
