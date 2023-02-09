@@ -5,6 +5,7 @@ import Navcomp from '../components/Navcomp';
 import Carouselcomp from '../components/Carouselcomp';
 import Featured from '../components/Featured';
 import Banner from '../components/Banner';
+import Social from '../components/Social';
 import '../styles/home.css';
 import slideData from '../data/slides.json';
 
@@ -35,6 +36,11 @@ function Home() {
         <Row className="gx-0">
           <Col>
             <Banner />
+          </Col>
+        </Row>
+        <Row className="gx-0">
+          <Col>
+            <Social />
           </Col>
         </Row>
       </Container>

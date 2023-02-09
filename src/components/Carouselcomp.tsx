@@ -14,7 +14,7 @@ type Slide = {
 function Carouselcomp({ slides }: Props) {
   return (
     <div className="Carouselcomp">
-      <Carousel id="test">
+      <Carousel fade indicators={false} id="test">
         {slides.map((item) => (
           <Carousel.Item
             key={item.mainText}

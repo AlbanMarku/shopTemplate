@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/esm/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import SmallCarousel from './SmallCarousel';
 import banner from '../assets/banner.jpg';
 import slideData from '../data/slides.json';

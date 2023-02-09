@@ -1,7 +1,8 @@
 { 
     "main": [ 
         { "image" : "https://images2.alphacoders.com/870/870886.jpg", "mainText" : "image 1", "subText" : "555-555-5555" },
-        { "image" : "https://images7.alphacoders.com/874/874020.jpg", "mainText" : "image 2", "subText" : "555-555-5555" } 
+        { "image" : "https://images7.alphacoders.com/874/874020.jpg", "mainText" : "image 2", "subText" : "555-555-5555" },
+        { "image" : "https://images3.alphacoders.com/830/830074.jpg", "mainText" : "image 2", "subText" : "555-555-5555" }
     ],
     "banner": [ 
         { "image" : "https://images2.alphacoders.com/870/870886.jpg", "mainText" : "image sub 1", "subText" : "555-555-5555" },
