@@ -1,5 +1,3 @@
-import Container from 'react-bootstrap/esm/Container';
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import item from '../assets/item.jpg';
 import '../styles/itemCard.css';
@@ -15,11 +13,7 @@ function ItemCard() {
         </div>
       </div>
       <div className="itemInfo">
-        <Container>
-          <Row>
-            <Button>Purchase</Button>
-          </Row>
-        </Container>
+        <Button id="purchaseBtn">Purchase</Button>
       </div>
     </div>
   );
