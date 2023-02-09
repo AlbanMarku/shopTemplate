@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Store from './views/Store';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (

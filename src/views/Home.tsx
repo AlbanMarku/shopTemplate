@@ -17,18 +17,10 @@ function Home() {
         </Row>
       </Container>
 
-      <Container fluid="lg" className="gx-0 content">
-        <Row className="gx-0">
-          <Col>
-            <Carouselcomp />
-          </Col>
-        </Row>
-        <Row className="gx-0">
-          <Col xs={12}>
-            <Featured />
-          </Col>
-        </Row>
-      </Container>
+      <div className="container">
+        <Carouselcomp />
+        <Featured />
+      </div>
     </div>
   );
 }

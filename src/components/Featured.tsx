@@ -9,24 +9,18 @@ function Featured() {
   return (
     <div className="Featured">
       <div className="itemArea">
-        <Container fluid="lg" className="gx-0 content">
-          <Row className="gx-0">
-            <Col xs={12}>
-              <header>
-                <h2>Featured products</h2>
-              </header>
+        <header>
+          <h2>Featured products</h2>
+        </header>
+        <div className="items">
+          {arr.map((item) => (
+            <Col key="t">
+              <div className="test">
+                <ItemCard />
+              </div>
             </Col>
-          </Row>
-          <Row className="gx-0">
-            {arr.map((item) => (
-              <Col key="t">
-                <div className="test">
-                  <ItemCard />
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+          ))}
+        </div>
       </div>
     </div>
   );

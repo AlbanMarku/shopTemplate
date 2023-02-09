@@ -2,3 +2,7 @@
     background-size: cover;
     height: 500px;
 }
+
+.Carouselcomp h3, .Carouselcomp p {
+    margin: 0 !important;
+}

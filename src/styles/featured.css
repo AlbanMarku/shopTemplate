@@ -5,13 +5,20 @@
 .itemArea {
 }
 
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 h2 {
     font-size: 2rem;
+    margin: 0 !important;
 }
 
 .test {
