@@ -1,10 +1,6 @@
 .Featured {
     background-color: blue;
 }
-
-.itemArea {
-}
-
 .items {
     display: flex;
     flex-wrap: wrap;
@@ -25,3 +21,11 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .items {
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 10px;
+    }
+  }

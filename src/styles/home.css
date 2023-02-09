@@ -1,7 +1,4 @@
-.content {
-    max-width: 1700px;
-}
-
 .container {
     padding: 0 !important;
+    width: 100%;
 }

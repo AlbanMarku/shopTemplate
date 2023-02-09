@@ -6,3 +6,9 @@
 .Carouselcomp h3, .Carouselcomp p {
     margin: 0 !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .imageItem {
+        height: 400px;
+    }
+  }

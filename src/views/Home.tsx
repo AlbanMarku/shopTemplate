@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Navcomp from '../components/Navcomp';
 import Carouselcomp from '../components/Carouselcomp';
 import Featured from '../components/Featured';
+import Banner from '../components/Banner';
 import '../styles/home.css';
 
 function Home() {
@@ -17,10 +18,23 @@ function Home() {
         </Row>
       </Container>
 
-      <div className="container">
-        <Carouselcomp />
-        <Featured />
-      </div>
+      <Container fluid="lg" className="gx-0">
+        <Row className="gx-0">
+          <Col>
+            <Carouselcomp />
+          </Col>
+        </Row>
+        <Row className="gx-0">
+          <Col>
+            <Featured />
+          </Col>
+        </Row>
+        <Row className="gx-0">
+          <Col>
+            <Banner />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
