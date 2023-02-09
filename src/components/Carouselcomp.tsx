@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselItem from './CarouselItem';
 import '../styles/carouselcomp.css';
 
 type Props = {
