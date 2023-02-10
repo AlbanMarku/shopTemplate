@@ -1,9 +1,14 @@
 .Banner {
-    background-size: cover;
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .blurb {
