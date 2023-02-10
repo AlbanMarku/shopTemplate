@@ -1,8 +1,11 @@
 .ItemCard {
     width: 250px;
-    border: solid red;
     padding: 10px;
-    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid rgb(187, 187, 187) 1px;
+    margin: 10px;
+    /*clean up margin card with featured div*/
 }
 
 .ItemCard img {
@@ -30,3 +33,9 @@
 #purchaseBtn {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .ItemCard {
+        width: 130px;
+    }
+  }

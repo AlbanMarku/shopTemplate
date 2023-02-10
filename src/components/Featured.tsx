@@ -1,6 +1,5 @@
-import Container from 'react-bootstrap/esm/Container';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Titlebar from './Titlebar';
 import ItemCard from './ItemCard';
 import '../styles/featured.css';
 
@@ -9,9 +8,7 @@ function Featured() {
   return (
     <div className="Featured">
       <div className="itemArea">
-        <header>
-          <h2>Featured products</h2>
-        </header>
+        <Titlebar />
         <div className="items">
           {arr.map((item) => (
             <Col key="t">

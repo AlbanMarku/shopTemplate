@@ -3,7 +3,7 @@ import '../styles/smallCarousel.css';
 
 function SmallCarousel() {
   return (
-    <Carousel indicators={false} controls={false} className="SmallCarousel" fade>
+    <Carousel indicators={false} controls={false} className="SmallCarousel">
       <Carousel.Item>
         <img src="https://dummyimage.com/640x360/fff/aaa" alt="First slide" />
       </Carousel.Item>

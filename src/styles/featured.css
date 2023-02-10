@@ -1,20 +1,10 @@
 .Featured {
-    background-color: blue;
+    background-color: rgb(233, 233, 233);
 }
 .items {
     display: flex;
     flex-wrap: wrap;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 0 !important;
+    padding: 20px;
 }
 
 .test {

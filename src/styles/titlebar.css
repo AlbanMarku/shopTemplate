@@ -1,0 +1,13 @@
+.Titlebar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(221, 220, 220);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.103);
+
+}
+
+.Titlebar h2 {
+    font-size: 2.5rem;
+    margin: 0 !important;
+}

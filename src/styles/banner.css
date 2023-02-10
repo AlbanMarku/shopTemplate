@@ -9,20 +9,35 @@
 .blurb {
     display: flex;
     align-items: center;
-    width: 400px;
+    max-width: 400px;
+    height: 250px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .blurb p {
     font-size: 1.7rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.226);
+    margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .Banner {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    .blurb {
+        width: 300px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .blurb p {
+        font-size: 1.3rem;
+    }
+    
   }

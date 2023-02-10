@@ -1,4 +1,5 @@
 import SmallCarousel from './SmallCarousel';
+import Titlebar from './Titlebar';
 import banner from '../assets/banner.jpg';
 import slideData from '../data/slides.json';
 import '../styles/banner.css';
